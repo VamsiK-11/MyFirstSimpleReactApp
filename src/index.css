@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  position: relative; 
+  transition: z-index 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.nav-item:hover a {
+  transform: translateY(-5px);
+  z-index: 10; 
+}
+
